@@ -10,10 +10,17 @@ var aquamy = EspeceMonstre(7,"aquamy","Meteo",55,10,11,9,14,14,27.0,9.0,10.0,7.5
 var laoumi = EspeceMonstre(8,"Laoumi","animal",58,11,10,9,8,11,23.0,11.0, 8.0,7.0,6.0,11.5,"Petit ourson au pelage soyeux, aime se tenir debout.","Son grognement est mignon mais il protège ses amis.","Affectueux, protecteur, gourmand")
 var bugsyface = EspeceMonstre(10,"Bugsyface","Insecte",45,10,13,8,7,13,21.0,7.0,11.0,6.5,8.0,11.5,"Insecte à carapace luisante, se déplace par bonds et vibre des antennes.","Sa carapace devient plus dure après chaque mue.","Travailleur, sociable, infatigable")
 var galum = EspeceMonstre(13,"galum","Minéral",55,12,15,6,8,12,13.0,9.0,13.0,4.0,6.5,10.5,"Golem ancien de pierre, yeux lumineux en garde.","Peut rester immobile des heures comme une statue.","Sérieux, stoïque, fiable")
-var liste = mutableListOf(springleaf,flamkip,aquamy,laoumi,bugsyface,galum)
-var zone1 = Zone(1,"l'enfer",666,[])
-var zone2 = Zone(1,)
+var liste1 = mutableListOf(springleaf,flamkip,aquamy,laoumi,bugsyface,galum)
+var route1 = Zone(1,"Terre",50, mutableListOf(aquamy,bugsyface),null,null)
+var route2 = Zone(2,"Lune", 100, mutableListOf(springleaf,flamkip,laoumi,galum),null,null)
+
+
 fun main() {
+
+
+    route1.zoneSuivante = route2
+    route2.zonePrecedente = route1
+
 
 
 
