@@ -1,12 +1,18 @@
 import dresseur.Entraineur
 import monstre.EspeceMonstre.EspeceMonstre
+import monde.Zone
 
 var joueur = Entraineur(1,"Sacha",100)
 var rival = Entraineur(2,"Regis",200)
 var springleaf = EspeceMonstre(1,"springleaf","Graine",60,9,11,10,12,14,34.0,6.5,9.0,8.0,7.0,10.0,"Petit monstre espiègle rond comme une graine, adore le soleil.","Sa feuille sur la tête indique son humeur.","Curieux, amical, timide")
 var flamkip = EspeceMonstre(4,"Flamkip","Animal",50,12,8,13,16,7,22.0,10.0,5.5,9.5,9.5,6.5,"Petit monstre espiègle rond comme une graine, adore le soleil.","Sa feuille sur la tête indique son humeur.","Curieux, amical, timide")
-var aquamy = EspeceMonstre()
-
+var aquamy = EspeceMonstre(7,"aquamy","Meteo",55,10,11,9,14,14,27.0,9.0,10.0,7.5,12.0,12.0,"Créature vaporeuse semblable à un nuage, produit des gouttes pures.","Fait baisser la température en s’endormant.","Calme, rêveur, mystérieux")
+var laoumi = EspeceMonstre(8,"Laoumi","animal",58,11,10,9,8,11,23.0,11.0, 8.0,7.0,6.0,11.5,"Petit ourson au pelage soyeux, aime se tenir debout.","Son grognement est mignon mais il protège ses amis.","Affectueux, protecteur, gourmand")
+var bugsyface = EspeceMonstre(10,"Bugsyface","Insecte",45,10,13,8,7,13,21.0,7.0,11.0,6.5,8.0,11.5,"Insecte à carapace luisante, se déplace par bonds et vibre des antennes.","Sa carapace devient plus dure après chaque mue.","Travailleur, sociable, infatigable")
+var galum = EspeceMonstre(13,"galum","Minéral",55,12,15,6,8,12,13.0,9.0,13.0,4.0,6.5,10.5,"Golem ancien de pierre, yeux lumineux en garde.","Peut rester immobile des heures comme une statue.","Sérieux, stoïque, fiable")
+var liste = mutableListOf(springleaf,flamkip,aquamy,laoumi,bugsyface,galum)
+var zone1 = Zone(1,"l'enfer",666,[])
+var zone2 = Zone(1,)
 fun main() {
 
 
@@ -17,6 +23,14 @@ fun main() {
     joueur.afficheDetail()
     println(springleaf.afficheArt())
     println(flamkip.afficheArt())
+    println(aquamy.afficheArt())
+    println(laoumi.afficheArt())
+    println(bugsyface.afficheArt())
+    println(galum.afficheArt())
+
+
+
+
 
 
 
